@@ -10,7 +10,7 @@ function SideMenu({}) {
           <li className="menuLI">
             <a href="#mon-profil">
               <div className="liSideBar">
-                <img className="liImg" src="https://static.vecteezy.com/system/resources/previews/020/911/896/non_2x/profile-icon-avatar-icon-user-icon-person-icon-free-png.png" alt="" />
+                <img className="liImg" src="/src/assets/avatar.png" alt="" />
                 <h2 className="menuOption">Mon profil</h2>
               </div>
             </a>

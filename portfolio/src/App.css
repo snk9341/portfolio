@@ -13,19 +13,6 @@ body {
     display: none;
   }
 
-  .portfolio {
-    padding-left: 15vw;
-    padding-right: 15vw;
-    width: 55vw;
-    height: 100vh;
-    font-size: 3vw;
-    overflow: auto;
-  }
-
-  .portfolio::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
-  }
-
   .headerLandscape {
     width: 100%;
     height: fit-content;
@@ -103,11 +90,41 @@ body {
     font-size: 1vw;
   }
 
-  #acceuil {
-    border: solid green 2px;
-    
+  .portfolio {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    width: 55vw;
+    height: 100vh;
+    font-size: 3vw;
+    overflow: auto;
   }
 
+  .portfolio::-webkit-scrollbar {
+     display: none; /* Safari and Chrome */
+  }
+
+  #acceuil {
+    border: solid green 2px;
+    width: 100%;
+    max-height: 90vh;
+    overflow: scroll;
+
+    margin-bottom: 5vh;
+    margin-top: 4vh;
+  }
+
+  #acceuil::-webkit-scrollbar {
+     display: none; /*Safari and Chrome */
+  }
+
+  .pAcceuil {
+    font-size: 3vh;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 @media (orientation: portrait) {

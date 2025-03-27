@@ -1,8 +1,153 @@
-.background-menu {
-    width: 100vw;
-    height: 100vw;
+body {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
 }
 
-.image-background {
+@media (orientation: landscape) {
+  .website {
     width: 100vw;
+    display: flex;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .portfolio {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    width: 55vw;
+    height: 100vh;
+    font-size: 3vw;
+    overflow: auto;
+  }
+
+  .portfolio::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
+  .headerLandscape {
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(51, 51, 51);
+  }
+
+  .sidebar {
+    width: 18vw;
+    background-color: rgba(51, 51, 51);
+    height: 100vh;
+  }
+
+  .myProfil {
+    padding: 1vw;
+    display: flex;
+    border-right: solid 1px grey;
+    align-items: center;
+  }
+
+  .imgLogoSite {
+    width: 20%;
+    border-radius: 2vw;
+    aspect-ratio: 1;
+  }
+
+  .nameAppli {
+    align-items: center;
+    font-size: 1.5vw;
+    padding-left: 2vw;
+  }
+  .menu {
+    width: 100%;
+  }
+
+  .menuUL {
+    width: 100%;
+  }
+
+  .liA {
+    text-decoration: none;
+  }
+
+  .liSideBar:hover {
+    background-color: grey;
+  }
+
+  .menuLI {
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+
+  .liSideBar {
+    width: 90%;
+    margin-top: 3vh;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 100%;
+        color: white;
+        text-align: center;
+  }
+
+  .liImg {
+    width: 2vw;
+    aspect-ratio: 1;
+    object-fit: contain;
+    margin-left: 3vw;
+    margin-right: 2vw;
+  }
+
+  .menuOption {
+    font-size: 1vw;
+  }
+
+  #acceuil {
+    border: solid green 2px;
+    
+  }
+
+}
+
+@media (orientation: portrait) {
+  .website {
+    display: flex;
+  }
+
+  .header {
+    width: 80vw;
+    height: 12vh;
+    padding: 2%;
+    background-color: rgba(240, 240, 240);
+    position: sticky;
+    top: 0vw;
+    margin: 15%;
+    margin-top: 0;
+    border-bottom-right-radius: 6%;
+    border-bottom-left-radius: 5vw;
+  }
+
+  .headerLandscape {
+    display: none;
+  }
+
+  .myProfil {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgLogoSite {
+    border-radius: 2vw;
+    width: 20%;
+    aspect-ratio: 1;
+  }
+
+  .nameAppli {
+    font-size: 10vw;
+    padding-left: 2vw;
+  }
 }

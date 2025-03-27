@@ -103,7 +103,7 @@ body {
      display: none; /* Safari and Chrome */
   }
 
-  #acceuil {
+  #mon-profil {
     border: solid green 2px;
     width: 100%;
     max-height: 90vh;
@@ -113,7 +113,7 @@ body {
     margin-top: 4vh;
   }
 
-  #acceuil::-webkit-scrollbar {
+  #mon-profil::-webkit-scrollbar {
      display: none; /*Safari and Chrome */
   }
 

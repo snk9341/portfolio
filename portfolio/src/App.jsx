@@ -8,37 +8,25 @@ function SideMenu({}) {
       <div className="menu">
         <ul className="menuUL">
           <li className="menuLI">
-            <a href="#acceuil">
+            <a href="#mon-profil">
               <div className="liSideBar">
-                <img
-                  className="liImg"
-                  src="https://img.icons8.com/office40/512/square.png"
-                  alt=""
-                />
-                <h2 className="menuOption">Acceuil</h2>
+                <img className="liImg" src="https://static.vecteezy.com/system/resources/previews/020/911/896/non_2x/profile-icon-avatar-icon-user-icon-person-icon-free-png.png" alt="" />
+                <h2 className="menuOption">Mon profil</h2>
               </div>
             </a>
           </li>
           <li className="menuLI">
-            <a href="#experience-professionel">
+            <a href="#mes-experiences">
               <div className="liSideBar">
-                <img
-                  className="liImg"
-                  src="https://img.icons8.com/office40/512/square.png  "
-                  alt=""
-                />
-                <h2 className="menuOption">Experience professionel</h2>
+                <img className="liImg" src="https://cdn-icons-png.freepik.com/256/1086/1086511.png?semt=ais_hybrid" alt="" />
+                <h2 className="menuOption">Mes experiences</h2>
               </div>
             </a>
           </li>
           <li className="menuLI">
             <a href="#compétences">
               <div className="liSideBar">
-                <img
-                  className="liImg"
-                  src="https://img.icons8.com/office40/512/square.png  "
-                  alt=""
-                />
+                <img className="liImg" src="https://www.freeiconspng.com/thumbs/list-icon/checklist-icon-checklist-icon-png-list-icon-7.png" alt="" />
                 <h2 className="menuOption">Compétences</h2>
               </div>
             </a>
@@ -46,11 +34,7 @@ function SideMenu({}) {
           <li className="menuLI">
             <a href="#mes-projets">
               <div className="liSideBar">
-                <img
-                  className="liImg"
-                  src="https://img.icons8.com/office40/512/square.png  "
-                  alt=""
-                />
+                <img className="liImg" src="https://cdn-icons-png.flaticon.com/512/1087/1087902.png" alt="" />
                 <h2 className="menuOption">Mes projets</h2>
               </div>
             </a>
@@ -58,11 +42,7 @@ function SideMenu({}) {
           <li className="menuLI">
             <a href="#veille-technologique">
               <div className="liSideBar">
-                <img
-                  className="liImg"
-                  src="https://img.icons8.com/office40/512/square.png"
-                  alt=""
-                />
+                <img className="liImg" src="https://cdn-icons-png.flaticon.com/512/85/85595.png" alt="" />
                 <h2 className="menuOption">Veille technologique</h2>
               </div>
             </a>
@@ -77,11 +57,7 @@ function Header({}) {
   return (
     <>
       <div className="myProfil">
-        <img
-          className="imgLogoSite"
-          src="https://cdn-icons-png.flaticon.com/512/4004/4004113.png"
-          alt="logo application"
-        />
+        <img className="imgLogoSite" src="https://cdn-icons-png.flaticon.com/512/4004/4004113.png" alt="logo application" />
         <h1 className="nameAppli">mon portefolio</h1>
       </div>
     </>
@@ -91,8 +67,8 @@ function Header({}) {
 function Acceuil({}) {
   return (
     <>
-      <div id="acceuil">
-        <a href="#acceuil"><h2>Mon profil</h2></a>
+      <div id="mon-profil">
+        <a href="#mon-profil"><h2>Mon profil</h2></a>
         <br />
         <p className="pAcceuil">
           Hello, moi c'est Ilann ! Je suis étudiant en BTS SIO option SLAM à

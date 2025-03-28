@@ -18,7 +18,7 @@ function SideMenu({}) {
           <li className="menuLI">
             <a href="#mes-experiences">
               <div className="liSideBar">
-                <img className="liImg" src="https://cdn-icons-png.freepik.com/256/1086/1086511.png?semt=ais_hybrid" alt="" />
+                <img className="liImg" src="/src/assets/work.png" alt="" />
                 <h2 className="menuOption">Mes experiences</h2>
               </div>
             </a>
@@ -26,7 +26,7 @@ function SideMenu({}) {
           <li className="menuLI">
             <a href="#compétences">
               <div className="liSideBar">
-                <img className="liImg" src="https://www.freeiconspng.com/thumbs/list-icon/checklist-icon-checklist-icon-png-list-icon-7.png" alt="" />
+                <img className="liImg" src="/src/assets/checklist.png" alt="" />
                 <h2 className="menuOption">Compétences</h2>
               </div>
             </a>
@@ -34,7 +34,7 @@ function SideMenu({}) {
           <li className="menuLI">
             <a href="#mes-projets">
               <div className="liSideBar">
-                <img className="liImg" src="https://cdn-icons-png.flaticon.com/512/1087/1087902.png" alt="" />
+                <img className="liImg" src="/src/assets/projet.png" alt="" />
                 <h2 className="menuOption">Mes projets</h2>
               </div>
             </a>
@@ -42,7 +42,7 @@ function SideMenu({}) {
           <li className="menuLI">
             <a href="#veille-technologique">
               <div className="liSideBar">
-                <img className="liImg" src="https://cdn-icons-png.flaticon.com/512/85/85595.png" alt="" />
+                <img className="liImg" src="/src/assets/veille.png" alt="" />
                 <h2 className="menuOption">Veille technologique</h2>
               </div>
             </a>
@@ -57,9 +57,10 @@ function Header({}) {
   return (
     <>
       <div className="myProfil">
-        <img className="imgLogoSite" src="https://cdn-icons-png.flaticon.com/512/4004/4004113.png" alt="logo application" />
+        <img className="imgLogoSite" src="/src/assets/logo-portfolio.png" alt="logo application" />
         <h1 className="nameAppli">mon portefolio</h1>
       </div>
+      <hr className="hrHeader"/>
     </>
   );
 }
@@ -71,7 +72,7 @@ function Acceuil({}) {
         <a href="#mon-profil"><h2>Mon profil</h2></a>
         <br />
         <p className="pAcceuil">
-          Hello, moi c'est Ilann ! Je suis étudiant en BTS SIO option SLAM à
+          Hello, moi c'est Ilann ! <br /> <br /> Je suis étudiant en BTS SIO option SLAM à
           l'institut F2i de Vincennes, où je me spécialise dans le développement
           d'applications. <br /> En parallèle, je travaille en alternance dans une
           startup à Station F, un environnement dynamique qui me permet de

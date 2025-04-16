@@ -5,6 +5,7 @@ import "./App.css";
 function SideMenu({}) {
   return (
     <>
+<<<<<<< Updated upstream
       <div className="menu">
         <ul className="menuUL">
           <li className="menuLI">
@@ -48,6 +49,10 @@ function SideMenu({}) {
             </a>
           </li>
         </ul>
+=======
+      <div className="background-menu">
+        <img src="https://wallpapercave.com/wp/wp2633262.jpg" className='image-background' alt="" />
+>>>>>>> Stashed changes
       </div>
     </>
   );

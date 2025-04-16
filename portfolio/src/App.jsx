@@ -5,14 +5,13 @@ import "./App.css";
 function SideMenu({}) {
   return (
     <>
-<<<<<<< Updated upstream
       <div className="menu">
         <ul className="menuUL">
           <li className="menuLI">
             <a href="#mon-profil">
               <div className="liSideBar">
                 <img className="liImg" src="/src/assets/avatar.png" alt="" />
-                <h2 className="menuOption">Mon profil</h2>
+                <u><h2 className="menuOption">Mon profil</h2></u>
               </div>
             </a>
           </li>
@@ -49,10 +48,6 @@ function SideMenu({}) {
             </a>
           </li>
         </ul>
-=======
-      <div className="background-menu">
-        <img src="https://wallpapercave.com/wp/wp2633262.jpg" className='image-background' alt="" />
->>>>>>> Stashed changes
       </div>
     </>
   );
@@ -74,7 +69,7 @@ function Acceuil({}) {
   return (
     <>
       <div id="mon-profil">
-        <a href="#mon-profil"><h2>Mon profil</h2></a>
+        <a href="#mon-profil"><u><h2>Mon profil</h2></u></a>
         <br />
         <p className="pAcceuil">
           Hello, moi c'est Ilann ! <br /> <br /> Je suis étudiant en BTS SIO option SLAM à
@@ -94,6 +89,17 @@ function Acceuil({}) {
   );
 }
 
+//sous forme de cartes 
+function Experiences ({}) {
+  return (
+    <>
+    <div className="experiences">
+
+    </div>
+    </>
+  )
+}
+
 export default function App() {
   return (
     <>
@@ -107,6 +113,7 @@ export default function App() {
           </div>
           <div className="portfolio">
             <Acceuil />
+            <Experiences />
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ function SideMenu({}) {
             <a href="#mon-profil">
               <div className="liSideBar">
                 <img className="liImg" src="/src/assets/avatar.png" alt="" />
-                <u><h2 className="menuOption">Mon profil</h2></u>
+                <h2 className="menuOption">Mon profil</h2>
               </div>
             </a>
           </li>
@@ -94,7 +94,7 @@ function Experiences ({}) {
   return (
     <>
     <div className="experiences">
-
+      <p>lorem100</p>
     </div>
     </>
   )

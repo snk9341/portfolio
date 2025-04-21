@@ -10,7 +10,7 @@ body {
   }
 
   .header {
-    display: none;
+    display: flex;
   }
 
   .hrHeader {
@@ -22,21 +22,20 @@ body {
   .headerLandscape {
     width: 100%;
     height: fit-content;
-    background-color: rgba(51, 51, 51);
   }
 
   .sidebar {
     width: 18vw;
-    background-color: rgba(51, 51, 51);
+    background-color: darkslategrey;
     height: 100vh;
     position: fixed;
+    display: inline-block;
   }
 
   .myProfil {
     color: white;
     padding: 1vw;
     display: flex;
-    border-right: solid 1px grey;
     align-items: center;
   }
 
@@ -64,7 +63,7 @@ body {
   }
 
   .liSideBar:hover {
-    background-color: grey;
+    background-color: rgb(84, 141, 141);
   }
 
   .menuLI {
@@ -81,9 +80,8 @@ body {
     border-radius: 2vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
-    width: 100%;
-        color: white;
-        text-align: center;
+    color: white;
+    text-align: center;
   }
 
   .liImg {
@@ -99,38 +97,47 @@ body {
   }
 
   .portfolio {
-    margin-left: 13vw;
-    padding-left: 15vw;
-    padding-right: 15vw;
-    width: 55vw;
+    margin-left: 18vw;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    width: 58vw;
     font-size: 3vw;
-    overflow: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
-}
+  }
 
   ::-webkit-scrollbar {
-     display: none; /* Safari and Chrome */
+    display: none; /* Safari and Chrome */
+  }
+
+  html {
+    scroll-snap-type: both mandatory;
   }
 
   #mon-profil {
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-
-    margin-bottom: 5vh;
-    margin-top: 4vh;
   }
 
- 
+  #mes-experiences {
+    max-height: 100vh;
+  }
+
+  .presClass {
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    padding-bottom: 8vh;
+    padding-top: 12vh;
+    scroll-snap-align: start;
+  }
 
   .pAcceuil {
     font-size: 3vh;
     margin-top: -2vh;
     font-family: "Trirong", serif;
-    font-weight: 400;
-    font-style: normal;
+    overflow: hidden;
+    max-height: 63vh;
+    line-height: 4vh;
   }
 
   a {
@@ -145,6 +152,43 @@ body {
   h2 {
     color: black;
   }
+
+  htlm {
+    scroll-snap-type: y mandatory;
+  }
+
+  .cardContainer {
+    margin-top: 4vh;
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .firstCard {
+    border: solid black 1px;
+    border-radius: 2vw;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    width: 16.14vw;
+    background-color: rgb(125, 194, 194);
+    display: flex;
+    justify-content: center;
+  }
+
+  .imageCard {
+    border: solid;
+    height: 25vh;
+    aspect-ratio: 1;
+    margin-top: 2vh;
+  }
+
+  .imgimg {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 
@@ -152,14 +196,11 @@ body {
 
 
 
-
-
-
-
-
-
-
 @media (orientation: portrait) {
+  .landscape {
+    display: none;
+  }
+
   .website {
     display: flex;
   }
@@ -200,4 +241,3 @@ body {
     padding-left: 2vw;
   }
 }
-

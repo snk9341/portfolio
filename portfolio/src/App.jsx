@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import "./reset.css";
 import "./App.css";
 
@@ -19,7 +20,7 @@ function SideMenu({}) {
             <a href="#mes-experiences">
               <div className="liSideBar">
                 <img className="liImg" src="/src/assets/work.png" alt="" />
-                <h2 className="menuOption">Mes experiences</h2>
+                <h2 className="menuOption">Mes expériences</h2>
               </div>
             </a>
           </li>
@@ -27,7 +28,7 @@ function SideMenu({}) {
             <a href="#compétences">
               <div className="liSideBar">
                 <img className="liImg" src="/src/assets/checklist.png" alt="" />
-                <h2 className="menuOption">Compétences</h2>
+                <h2 className="menuOption">Mes compétences</h2>
               </div>
             </a>
           </li>
@@ -68,8 +69,8 @@ function Header({}) {
 function Acceuil({}) {
   return (
     <>
-      <div id="mon-profil">
-        <a href="#mon-profil"><u><h2>Mon profil</h2></u></a>
+      <section id="mon-profil" className="presClass">
+        <a href="#mon-profil"><u><h2>#Mon profil</h2></u></a>
         <br />
         <p className="pAcceuil">
           Hello, moi c'est Ilann ! <br /> <br /> Je suis étudiant en BTS SIO option SLAM à
@@ -84,23 +85,83 @@ function Acceuil({}) {
           est là pour partager mon travail et montrer ce que je sais faire.
           Bonne visite !
         </p>
-      </div>
+      </section>
     </>
   );
 }
 
+
 //sous forme de cartes 
-function Experiences ({}) {
+function Experiences ({info}) {
   return (
     <>
-    <div className="experiences">
-      <p>lorem100</p>
-    </div>
+    <section id="mes-experiences" className="presClass">
+      <a href="#mes-experiences"><u><h2>#Mes expériences</h2></u></a>
+      <div className="cardContainer">
+        <div className="firstCard">
+          <div className="imageCard">
+            <img className="imgimg" src="{experiences[0].image}" alt="" />
+          </div>
+        </div>
+        <div className="firstCard">
+          
+        </div>
+        <div className="firstCard">
+        
+        </div>
+      </div>
+    </section>
+    </>
+  )
+}
+
+function Competences ({}) {
+  return (
+    <>
+      <section id="compétences" className="presClass">
+        <a href="#compétences"><u><h2>#compétences</h2></u></a>
+      </section>
+    </>
+  )
+}
+
+function MesProjets ({}) {
+  return (
+    <>
+      <section id="mes-projets" className="presClass">
+        <a href="#mes-projets"><u><h2>#Mes Projets</h2></u></a>
+      </section>
+    </>
+  )
+}
+
+function VeilleTechnologique ({}) {
+  return (
+    <>
+      <section id="veille-technologique" className="presClass">
+        <a href="#veille-technologique"><u><h2>#Veille technologique</h2></u></a>
+      </section>
     </>
   )
 }
 
 export default function App() {
+  const [experiences, setExperiences] = useState([]);
+  const getData = function () {
+    fetch("/infoExperiences.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setExperiences(data);
+        console.log(experiences[0]);
+      });
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+
+
   return (
     <>
       <div className="landscape">
@@ -112,8 +173,11 @@ export default function App() {
             <SideMenu />
           </div>
           <div className="portfolio">
-            <Acceuil />
+            <Acceuil info={experiences}/>
             <Experiences />
+            <Competences />
+            <MesProjets />
+            <VeilleTechnologique />
           </div>
         </div>
       </div>

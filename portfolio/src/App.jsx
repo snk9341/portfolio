@@ -98,16 +98,19 @@ function Experiences ({info}) {
     <section id="mes-experiences" className="presClass">
       <a href="#mes-experiences"><u><h2>#Mes expériences</h2></u></a>
       <div className="cardContainer">
-        <div className="firstCard">
-          <div className="imageCard">
-            <img className="imgimg" src="{experiences[0].image}" alt="" />
-          </div>
-        </div>
+        {info.map((info, index) => {
+          return (
+            <>
+              <div className="firstCard">
+                <div className="imageCard">
+                  <img className="imgimg" src={info.image} alt="" />
+                </div>
+              </div>
+            </>
+          )
+        })}
         <div className="firstCard">
           
-        </div>
-        <div className="firstCard">
-        
         </div>
       </div>
     </section>
@@ -152,16 +155,12 @@ export default function App() {
       .then((res) => res.json())
       .then((data) => {
         setExperiences(data);
-        console.log(experiences[0]);
       });
   };
 
   useEffect(() => {
     getData();
   }, []);
-
-
-
   return (
     <>
       <div className="landscape">
@@ -173,8 +172,8 @@ export default function App() {
             <SideMenu />
           </div>
           <div className="portfolio">
-            <Acceuil info={experiences}/>
-            <Experiences />
+            <Acceuil/>
+            <Experiences info={experiences} />
             <Competences />
             <MesProjets />
             <VeilleTechnologique />

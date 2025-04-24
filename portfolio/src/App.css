@@ -1,8 +1,3 @@
-body {
-  background-color: rgba(255, 255, 255, 0);
-  color: black;
-}
-
 @media (orientation: landscape) {
   .website {
     width: 100vw;
@@ -107,12 +102,12 @@ body {
     flex-direction: column;
   }
 
-  ::-webkit-scrollbar {
+  html::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
   }
 
   html {
-    scroll-snap-type: both mandatory;
+    scroll-snap-type: y mandatory;
   }
 
   #mon-profil {
@@ -153,19 +148,20 @@ body {
     color: black;
   }
 
-  htlm {
-    scroll-snap-type: y mandatory;
-  }
-
   .cardContainer {
     margin-top: 4vh;
     height: 65vh;
     width: 100%;
     display: flex;
     flex-direction: row;
+    overflow: auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-color: darkslategrey;
   }
 
-  .firstCard {
+  .Card {
+    transform: skewY(-10deg);
     border: solid black 1px;
     border-radius: 2vw;
     margin-top: 8vh;
@@ -173,23 +169,49 @@ body {
     margin-left: 1.5vw;
     margin-right: 1.5vw;
     width: 16.14vw;
-    background-color: rgb(125, 194, 194);
+    background-color: rgb(125, 194, 194, 0.75);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    flex: 0 0 auto;
   }
 
   .imageCard {
-    width: 14vw;
-    height: 18vh;
-    aspect-ratio: 1;
-    margin-top: 2vh;
+    width: 100%;
+    height: 60%;
   }
 
   .imgimg {
-    border-radius: 2vw;
+    border-top-right-radius: 2vw;
+    border-top-left-radius: 2vw;
     width: 100%;
     object-fit: cover;
     height: 100%;
+  }
+
+  .descExperience {
+    border: solid 1px grey;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    width: 100%;
+    height: 40%;
+  }
+  
+  .titleExperience {
+    font-size: 60%;
+    height: 30%;
+  }
+
+  .sumaryExperience {
+    height: 50%;
+    font-size: 50%;
+  }
+
+  .dateExperience {
+    height: 20%;
+    left: 40%;
+    font-size: 30%;
+    display: flex;
+    flex-direction: column;
   }
 }
 

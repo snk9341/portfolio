@@ -53,17 +53,25 @@ function Experiences ({info}) {
         {info.map((info, index) => {
           return (
             <>
-              <div className="firstCard">
+              <div className="Card">
                 <div className="imageCard">
                   <img className="imgimg" src={info.image} alt="" />
+                </div>
+                <div className="descExperience">
+                  <div className="titleExperience">
+                    <h3>{info.titre}</h3>
+                  </div>
+                  <div className="sumaryExperience">
+                    <h4>{info.resume}</h4>
+                  </div>
+                  <div className="dateExperience">
+                    <h5>{info.date}</h5>
+                  </div>
                 </div>
               </div>
             </>
           )
         })}
-        <div className="firstCard">
-          
-        </div>
       </div>
     </section>
     </>

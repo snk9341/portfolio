@@ -179,7 +179,6 @@ body {
   }
 
   .imageCard {
-    border: solid;
     width: 14vw;
     height: 18vh;
     aspect-ratio: 1;
@@ -187,6 +186,7 @@ body {
   }
 
   .imgimg {
+    border-radius: 2vw;
     width: 100%;
     object-fit: cover;
     height: 100%;

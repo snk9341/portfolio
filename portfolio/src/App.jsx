@@ -42,9 +42,21 @@ function Acceuil({}) {
   );
 }
 
+function Zomm ({info, index, zoomExit}) {
+  console.log(info);
+  return (
+    <>
+      <div className="background">
+        <div className="imgInfo">
+          <img className="imgInfoSizing" src={info.image} alt="" />
+        </div>
+      </div>
+    </>
+  )
+}
 
 //sous forme de cartes 
-function Experiences ({info}) {
+function Experiences ({info, moreInfo, zoom, zoomExit}) {
   return (
     <>
     <section id="mes-experiences" className="presClass">
@@ -53,7 +65,7 @@ function Experiences ({info}) {
         {info.map((info, index) => {
           return (
             <>
-              <div className="Card">
+              <div className="Card" id={"Card" + index} onClick={() => moreInfo(index)}>
                 <div className="imageCard">
                   <img className="imgimg" src={info.image} alt="" />
                 </div>
@@ -69,6 +81,9 @@ function Experiences ({info}) {
                   </div>
                 </div>
               </div>
+              {info.zoom && (
+                <Zomm info={info} index={index} zoomExit={(e) => zoomExit(e)}/>
+              )}
             </>
           )
         })}
@@ -110,6 +125,7 @@ function VeilleTechnologique ({}) {
 
 export default function App() {
   const [experiences, setExperiences] = useState([]);
+
   const getData = function () {
     fetch("/infoExperiences.json")
       .then((res) => res.json())
@@ -121,6 +137,17 @@ export default function App() {
   useEffect(() => {
     getData();
   }, []);
+
+  const moreInfo = function (index) {
+    [...experiences][index].zoom = true;
+    setExperiences([...experiences]);
+  }
+
+  const zoomExit = function (index) {
+    [...experiences][index].zoom = false;
+    setExperiences([...experiences]);
+  }
+
   return (
     <>
       <div className="landscape">
@@ -133,7 +160,7 @@ export default function App() {
           </div>
           <div className="portfolio">
             <Acceuil/>
-            <Experiences info={experiences} />
+            <Experiences info={experiences} moreInfo={(e) => moreInfo(e)} zoom = {(e) => Zomm(e)} zoomExit={(e) => zoomExit(e)}/>
             <Competences />
             <MesProjets />
             <VeilleTechnologique />

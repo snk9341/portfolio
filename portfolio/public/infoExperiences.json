@@ -1,34 +1,51 @@
 [
     {
-        "id": 0,
         "titre": "Stage La Poste",
-        "image": "https://yt3.googleusercontent.com/m9sbDD8y6kZ6nj3ywvn8SGZJ-6j5cp9KsYIzwMW29ZKCBX73JwTj65kkExnODRkS8JEBmJHf=s900-c-k-c0x00ffffff-no-rj",
+        "image": "/src/assets/logo-La-Poste.jpg",
         "resume": "stage de 3e à La Poste",
         "date": "décembre 2019",
-        "descriptif": "bfapivbzeivbzepvbpv^sdiviojvnazobvpdznvuzdibvpazdbvpzebvzep"
+        "descriptif": "Dans le cadre de mon stage de 3ᵉ, j'ai eu l'opportunité d'effectuer une semaine de stage au sein de La Poste. Cette première expérience professionnelle m'a permis de découvrir le fonctionnement d'une grande entreprise, de développer de nouvelles compétences et de mieux comprendre le monde du travail. Elle a également été très bénéfique pour la suite de ma scolarité en m'aidant à préciser mes choix d'orientation et à construire mon projet professionnel.",
+        "zoom": false
     },
     {
-        "id": 1,
         "titre": "Brevet des collèges",
-        "image": "https://patrimoine.seinesaintdenis.fr/IMG/jpg/ljlg09_facade_cour_et_preau_c_caue93_cecile_katz-p1130365.jpg",
-        "resume": "passage du brevet des collèges, mon premier diplôme",
-        "date": "juin 2020",
-        "descriptif": "bfapivbzeivbzepvbpv^sdiviojvnazobvpdznvuzdibvpazdbvpzebvzep"
+        "image": "/src/assets/photo-collège.jpg",
+        "resume": "passage du brevet des collèges",
+        "date": "septembre2016 - juin 2020",
+        "descriptif": "Durant mes années de collège, j'ai pu acquérir des connaissances solides dans de nombreuses matières et développer des compétences essentielles pour la suite de mon parcours scolaire. Cette période a également été marquée par de nombreuses expériences enrichissantes, tant sur le plan académique que personnel. À l'issue de ces quatre années, j'ai obtenu mon diplôme national du brevet, une étape importante qui a récompensé mon travail et mes efforts, et qui m'a permis de poursuivre mes études avec motivation et ambition.",
+        "zoom": false
     },
     {
-        "id": 1,
-        "titre": "Brevet des collèges",
-        "image": "https://patrimoine.seinesaintdenis.fr/IMG/jpg/ljlg09_facade_cour_et_preau_c_caue93_cecile_katz-p1130365.jpg",
-        "resume": "passage du brevet des collèges, mon premier diplôme",
-        "date": "juin 2020",
-        "descriptif": "bfapivbzeivbzepvbpv^sdiviojvnazobvpdznvuzdibvpazdbvpzebvzep"
+        "titre": "Baccalauréat général",
+        "image": "https://aulnaycap.com/wp-content/uploads/2025/04/andre_boulloche.jpg",
+        "resume": "passage du bac général",
+        "date": "septembre 2020 - juin 2023",
+        "descriptif": "Mon passage au lycée a été une étape importante de mon parcours scolaire. Il m'a permis de consolider mes connaissances, d'approfondir mes compétences dans des matières spécifiques, et de gagner en autonomie et en rigueur. Après trois années de travail et d'engagement, j'ai obtenu mon baccalauréat, une réussite qui marque l'aboutissement de mes efforts et qui ouvre la voie vers l'enseignement supérieur et la construction de mon projet professionnel.",
+        "zoom": false
     },
     {
-        "id": 1,
-        "titre": "Brevet des collèges",
-        "image": "https://patrimoine.seinesaintdenis.fr/IMG/jpg/ljlg09_facade_cour_et_preau_c_caue93_cecile_katz-p1130365.jpg",
-        "resume": "passage du brevet des collèges, mon premier diplôme",
-        "date": "juin 2020",
-        "descriptif": "bfapivbzeivbzepvbpv^sdiviojvnazobvpdznvuzdibvpazdbvpzebvzep"
+        "titre": "BTS SIO SLAM",
+        "image": "https://www.institut-f2i.fr/wp-content/uploads/2022/10/5d397a95a400004117bbb0aa-edited-3.jpg",
+        "resume": "passage du BTS SIO option SLAM",
+        "date": "octobre 2023 - juin 2025",
+        "descriptif": "Actuellement, je poursuis mes études en BTS Services Informatiques aux Organisations (option Solutions Logicielles et Applications Métiers - SLAM). Cette formation me permet de développer des compétences techniques solides en développement d'applications, en gestion de bases de données et en programmation. Elle m'offre également l'opportunité d'acquérir une véritable expérience professionnelle grâce à l'alternance. Ce BTS représente une étape clé dans la construction de mon projet professionnel, en me préparant à intégrer le monde de l'informatique ou à poursuivre mes études dans ce domaine.",
+        "zoom": false
+    },
+    {
+        "titre": "Stage Metav.rs",
+        "image": "https://imageio.forbes.com/specials-images/imageserve/63380a161124e764e14ce610/Logo-of-METAV-RS-set-to-be-the-Shopify-of-the-metaverse-/960x0.jpg?format=jpg&width=960",
+        "resume": "passage du brevet des collèges",
+        "date": "avril 2024 - juin 2024;:",
+        "descriptif": "Dans le cadre de mon BTS SIO option SLAM, j'ai effectué un stage chez Metav.rs, une startup spécialisée dans le développement de solutions Web3 pour les marques. Cette expérience m'a permis de participer à des projets innovants autour des NFT, de la réalité augmentée et des plateformes immersives. J'ai pu renforcer mes compétences en développement web tout en découvrant de nouvelles technologies liées à la blockchain et aux environnements virtuels. Ce stage a été très enrichissant pour mon parcours professionnel et a confirmé mon intérêt pour les technologies émergentes.",
+        "zoom": false
+    },    
+    {
+        "titre": "alternance Power.xyz",
+        "image": "https://media.licdn.com/dms/image/v2/D5610AQHA30jSLC611A/image-shrink_800/B56ZZOx9zfGcAc-/0/1745078443947?e=2147483647&v=beta&t=c56fC92UMO0j3RqOIuEs88xDW9EV2lvYMfXLybFYU9s",
+        "resume": "développeur front-end en alternance chez power.xyz",
+        "date": "septembre 2024 - aujourd'hui",
+        "descriptif": "À la suite de mon stage, j'ai eu l'opportunité d'être recruté en alternance par la startup, désormais renommée Power.xyz. Cette nouvelle expérience me permet de continuer à évoluer dans un environnement innovant, en travaillant sur des projets liés au Web3, aux NFT et aux plateformes immersives. Grâce à cette alternance, je renforce chaque jour mes compétences techniques et développe une véritable expérience professionnelle au sein d'une entreprise dynamique tournée vers l'avenir du numérique.",
+        "zoom": false
     }
+
 ]

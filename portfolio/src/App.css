@@ -111,6 +111,7 @@
   }
 
   #mon-profil {
+    max-height: 100vh;
   }
 
   #mes-experiences {
@@ -157,22 +158,30 @@
     overflow: auto;
     flex-wrap: nowrap;
     overflow-x: auto;
-    scrollbar-color: darkslategrey;
+    scrollbar-color: darkslategrey rgb(111, 192, 192);
+    scrollbar-width: thin;
   }
+
 
   .Card {
     transform: skewY(-10deg);
-    border: solid black 1px;
+    box-shadow: -4px 4px rgb(76, 116, 116);
+    background-color: rgb(84, 141, 141);
     border-radius: 2vw;
     margin-top: 8vh;
     margin-bottom: 8vh;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
     width: 16.14vw;
-    background-color: rgb(125, 194, 194, 0.75);
     display: flex;
     flex-direction: column;
     flex: 0 0 auto;
+  }
+
+
+  .Card:hover {
+    transform: scale(1.15);
+    cursor: pointer;
   }
 
   .imageCard {
@@ -184,12 +193,11 @@
     border-top-right-radius: 2vw;
     border-top-left-radius: 2vw;
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
     height: 100%;
   }
 
   .descExperience {
-    border: solid 1px grey;
     border-bottom-left-radius: 2vw;
     border-bottom-right-radius: 2vw;
     width: 100%;
@@ -212,6 +220,35 @@
     font-size: 30%;
     display: flex;
     flex-direction: column;
+  }
+  
+  .background {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(153, 152, 152, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .imgInfo {
+    width: 85vw;
+    position: fixed;
+    border-radius: 5vw;
+    height: 38vw;
+    top: 6vw;
+    left: 7vw;
+  }
+
+  .imgInfoSizing {
+    height: inherit;
+    width: inherit;
+    border: none;
+    border-radius: inherit;
+    margin: 0px;
+    padding: 0px;
+    object-fit: cover;
+    aspect-ratio: 1;
   }
 }
 

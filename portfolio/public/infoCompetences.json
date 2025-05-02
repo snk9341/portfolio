@@ -1,0 +1,42 @@
+[
+    {
+        "titre": "Html",
+        "image": "https://c4.wallpaperflare.com/wallpaper/887/817/276/html-5-html-5-logo-wallpaper-thumb.jpg",
+        "resume": "cliquez pour en apprendre plus sur le html",
+        "date": "octobre 2023",
+        "descriptif": "Dans le cadre de ma formation en BTS SIO option SLAM, j’ai appris à maîtriser HTML, le langage de base pour structurer les pages web. Il permet d’organiser le contenu d’un site, comme le texte, les images ou les liens. Cette compétence m’a été indispensable pour mes premiers projets web, notamment lors de mes stages et de mon alternance, où j’ai souvent utilisé HTML en combinaison avec CSS et JavaScript pour créer des interfaces claires et fonctionnelles. C’est une base essentielle dans le développement web que j’utilise au quotidien.",
+        "zoom": false
+    },
+    {
+        "titre": "CSS",
+        "image": "https://wallpapercave.com/wp/wp14758676.jpg",
+        "resume": "cliquez pour en apprendre plus sur le css",
+        "date": "octobre 2023",
+        "descriptif": "Dans le cadre de mes projets web, j’ai appris à utiliser CSS (Cascading Style Sheets), un langage qui permet de gérer l’apparence et la mise en forme des pages HTML. Grâce à CSS, j’ai pu personnaliser l’interface utilisateur en agissant sur les couleurs, les polices, les marges ou encore les animations. C’est un outil indispensable pour rendre un site agréable, lisible et responsive. Au fil de ma formation et de mes expériences, j’ai appris à structurer mes feuilles de style de façon propre et réutilisable.",
+        "zoom": false
+    },
+    {
+        "titre": "php",
+        "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi245WyLyYHxOUlH49A4tBLRfVSpjebThXzSkbj9IUTsLUK0OoMipARsDV3MfK3JmN3U39rWd0j9DpQF65O1O5pSlzDmxkLfOLcHH8KA8SS9FkqDy7nBQnoC_aWVo9pvRtmDmO02AQQ9KT0hqG77YTPsjkurwsyQcPbVtwvi4FiF1E6IVjQqEKdA3YkYupF/s750/4994252_6808_2.jpg",
+        "resume": "cliquez pour en apprendre plus sur le php",
+        "date": "octobre 2023",
+        "descriptif": "J’ai également appris à développer avec PHP, un langage très utilisé pour créer des sites web dynamiques. Il permet de gérer la logique côté serveur, de traiter des formulaires, de manipuler des bases de données, ou encore de générer du contenu dynamique. J’ai utilisé PHP notamment pour développer des applications web complètes dans le cadre de mes projets en BTS SIO SLAM. Sa simplicité d’accès m’a permis de bien comprendre le fonctionnement des architectures web back-end.",
+        "zoom": false
+    },
+    {
+        "titre": "javascript",
+        "image": "https://wallpapercave.com/wp/wp12454874.jpg",
+        "resume": "cliquez pour en apprendre plus sur javascript et les frameworks react et svelte",
+        "date": "octobre 2023",
+        "descriptif": "J’ai découvert JavaScript, un langage de programmation incontournable pour le web, lors de ma formation en BTS SIO SLAM. Il permet de rendre les pages interactives en manipulant dynamiquement le contenu et les comportements d’une interface. J’ai ensuite approfondi son usage en alternance, en travaillant sur des projets concrets avec les frameworks React et Svelte. Cette expérience m’a permis de maîtriser des concepts clés comme le rendu réactif, la gestion d’état et la structuration d’interfaces modernes et performantes.",
+        "zoom": false
+    },
+    {
+        "titre": "clojure",
+        "image": "https://arootroatch-blog.vercel.app/_next/image?url=%2Fimg%2Fclojure-banner.png&w=3840&q=5",
+        "resume": "cliquez pour en apprendre plus sur clojure",
+        "date": "mai 2024",
+        "descriptif": "Dans le cadre de mon alternance, j’ai appris à développer en Clojure et ClojureScript, des langages fonctionnels dérivés de Lisp. J’ai notamment utilisé Reagent (une interface entre ClojureScript et React) ainsi que re-frame, un framework basé sur un modèle d’architecture unidirectionnelle. Cette expérience m’a permis de découvrir une nouvelle façon de programmer, centrée sur les fonctions pures, l’état immuable et la gestion claire des événements. Travailler avec cet écosystème m’a appris à structurer des applications complexes de manière élégante et performante.",
+        "zoom": false
+    }
+]

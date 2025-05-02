@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import "./reset.css";
-import "./App.css";
+import "../css/reset.css";
+import "../css/bases.css";
+import "../css/card.css";
+import "../css/sidebar.css";
+import "../css/section.css";
+import "../css/zoom.css";
 import SideMenu from "./sideMenu";
-
-
 
 function Header({}) {
   return (
@@ -47,8 +49,21 @@ function Zomm ({info, index, zoomExit}) {
   return (
     <>
       <div className="background">
-        <div className="imgInfo">
-          <img className="imgInfoSizing" src={info.image} alt="" />
+        <div className="info">
+          <div className="imageInfo">
+            <img className="imgInfoSizing" src={info.image} alt={info.titre}/>
+          </div>
+          <div className="globalInfo">
+            <div className="infoTitle">
+              <h2 className="h2Title">{info.titre}</h2>
+            </div>
+            <div className="infoDescription">
+              <p className="texteInfo">{info.descriptif}</p>
+            </div>
+          </div>
+          <div className="exit">
+            <button className="exitButton" onClick={() => zoomExit(index)}>X</button>
+          </div>
         </div>
       </div>
     </>
@@ -93,11 +108,38 @@ function Experiences ({info, moreInfo, zoom, zoomExit}) {
   )
 }
 
-function Competences ({}) {
+function Competences ({info, moreInfo, zoom, zoomExit}) {
   return (
     <>
       <section id="compétences" className="presClass">
         <a href="#compétences"><u><h2>#compétences</h2></u></a>
+        <div className="cardContainer">
+        {info.map((info, index) => {
+          return (
+            <>
+              <div className="cardComp" id={"Card" + index} onClick={() => moreInfo(index)}>
+                <div className="imageCard">
+                  <img className="imgimg" src={info.image} alt="" />
+                </div>
+                <div className="descExperience">
+                  <div className="titleExperience">
+                    <h3>{info.titre}</h3>
+                  </div>
+                  <div className="sumaryExperience">
+                    <h4>{info.resume}</h4>
+                  </div>
+                  <div className="dateExperience">
+                    <h5>{info.date}</h5>
+                  </div>
+                </div>
+              </div>
+              {info.zoom && (
+                <Zomm info={info} index={index} zoomExit={(e) => zoomExit(e)}/>
+              )}
+            </>
+          )
+        })}
+      </div>
       </section>
     </>
   )
@@ -125,8 +167,9 @@ function VeilleTechnologique ({}) {
 
 export default function App() {
   const [experiences, setExperiences] = useState([]);
+  const [competences, setCompetences] = useState([]);
 
-  const getData = function () {
+  const getExperiencesInfo = function () {
     fetch("/infoExperiences.json")
       .then((res) => res.json())
       .then((data) => {
@@ -134,8 +177,17 @@ export default function App() {
       });
   };
 
+  const getCompetencesInfo = function () {
+    fetch("/infoCompetences.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setCompetences(data);
+      });
+  };
+
   useEffect(() => {
-    getData();
+    getExperiencesInfo();
+    getCompetencesInfo();
   }, []);
 
   const moreInfo = function (index) {
@@ -146,6 +198,16 @@ export default function App() {
   const zoomExit = function (index) {
     [...experiences][index].zoom = false;
     setExperiences([...experiences]);
+  }
+
+  const moreInfo1 = function (index) {
+    [...competences][index].zoom = true;
+    setCompetences([...competences]);
+  }
+
+  const zoomExit1 = function (index) {
+    [...competences][index].zoom = false;
+    setCompetences([...competences]);
   }
 
   return (
@@ -161,7 +223,7 @@ export default function App() {
           <div className="portfolio">
             <Acceuil/>
             <Experiences info={experiences} moreInfo={(e) => moreInfo(e)} zoom = {(e) => Zomm(e)} zoomExit={(e) => zoomExit(e)}/>
-            <Competences />
+            <Competences  info={competences} moreInfo={(e) => moreInfo1(e)} zoom = {(e) => Zomm(e)} zoomExit={(e) => zoomExit1(e)}/>
             <MesProjets />
             <VeilleTechnologique />
           </div>

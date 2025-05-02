@@ -1,0 +1,25 @@
+.presClass {
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  padding-bottom: 8vh;
+  padding-top: 12vh;
+  scroll-snap-align: start;
+}
+
+.pAcceuil {
+  font-size: 3vh;
+  margin-top: -2vh;
+  font-family: "Trirong", serif;
+  overflow: hidden;
+  max-height: 63vh;
+  line-height: 4vh;
+}
+
+#mon-profil {
+  max-height: 100vh;
+}
+
+#mes-experiences {
+  max-height: 100vh;
+}

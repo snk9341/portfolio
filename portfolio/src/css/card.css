@@ -1,0 +1,86 @@
+.cardContainer {
+    margin-top: 4vh;
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-color: darkslategrey rgb(111, 192, 192);
+    scrollbar-width: thin;
+  }
+
+.Card {
+    transform: skewY(-7deg);
+    box-shadow: -4px 4px rgb(192, 89, 21);
+    background-color: rgb(255, 134, 54);
+    border-radius: 2vw;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    width: 16.14vw;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+  }
+
+  .cardComp {
+    transform: skewY(-7deg);
+    box-shadow: -4px 4px rgb(75, 26, 153);
+    background-color: rgb(129, 73, 221);
+    border-radius: 2vw;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    width: 16.14vw;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+  }
+
+
+  .Card:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+  }
+
+  .imageCard {
+    width: 100%;
+    height: 60%;
+  }
+
+  .imgimg {
+    border-top-right-radius: 2vw;
+    border-top-left-radius: 2vw;
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
+  }
+
+  .descExperience {
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    width: 100%;
+    height: 40%;
+  }
+  
+  .titleExperience {
+    font-size: 60%;
+    height: 30%;
+  }
+
+  .sumaryExperience {
+    height: 50%;
+    font-size: 50%;
+  }
+
+  .dateExperience {
+    height: 20%;
+    left: 40%;
+    font-size: 30%;
+    display: flex;
+    flex-direction: column;
+  }

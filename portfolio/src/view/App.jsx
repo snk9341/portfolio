@@ -45,7 +45,6 @@ function Acceuil({}) {
 }
 
 function Zomm ({info, index, zoomExit}) {
-  console.log(info);
   return (
     <>
       <div className="background">
@@ -86,7 +85,7 @@ function Experiences ({info, moreInfo, zoom, zoomExit}) {
                 </div>
                 <div className="descExperience">
                   <div className="titleExperience">
-                    <h3>{info.titre}</h3>
+                  <h3><u><b>{info.titre}</b></u></h3>
                   </div>
                   <div className="sumaryExperience">
                     <h4>{info.resume}</h4>
@@ -123,7 +122,7 @@ function Competences ({info, moreInfo, zoom, zoomExit}) {
                 </div>
                 <div className="descExperience">
                   <div className="titleExperience">
-                    <h3>{info.titre}</h3>
+                  <h3><u><b>{info.titre}</b></u></h3>
                   </div>
                   <div className="sumaryExperience">
                     <h4>{info.resume}</h4>
@@ -145,11 +144,38 @@ function Competences ({info, moreInfo, zoom, zoomExit}) {
   )
 }
 
-function MesProjets ({}) {
+function MesProjets ({info, moreInfo,zoomExit}) {
   return (
     <>
       <section id="mes-projets" className="presClass">
         <a href="#mes-projets"><u><h2>#Mes Projets</h2></u></a>
+        <div className="cardContainer">
+        {info.map((info, index) => {
+          return (
+            <>
+              <div className="cardProjet" id={"Card" + index} onClick={() => moreInfo(index)}>
+                <div className="imageCard">
+                  <img className="imgimg" src={info.image} alt="" />
+                </div>
+                <div className="descExperience">
+                  <div className="titleExperience">
+                    <h3><u><b>{info.titre}</b></u></h3>
+                  </div>
+                  <div className="sumaryExperience">
+                    <h4>{info.resume}</h4>
+                  </div>
+                  <div className="dateExperience">
+                    <h5>{info.date}</h5>
+                  </div>
+                </div>
+              </div>
+              {info.zoom && (
+                <Zomm info={info} index={index} zoomExit={(e) => zoomExit(e)}/>
+              )}
+            </>
+          )
+        })}
+      </div>
       </section>
     </>
   )
@@ -168,6 +194,7 @@ function VeilleTechnologique ({}) {
 export default function App() {
   const [experiences, setExperiences] = useState([]);
   const [competences, setCompetences] = useState([]);
+  const [projet, setProjet] = useState([]);
 
   const getExperiencesInfo = function () {
     fetch("/infoExperiences.json")
@@ -185,29 +212,47 @@ export default function App() {
       });
   };
 
+  const getProjetInfo = function () {
+    fetch("/infoProjet.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setProjet(data);
+      });
+  };
+
   useEffect(() => {
     getExperiencesInfo();
     getCompetencesInfo();
+    getProjetInfo();
   }, []);
 
-  const moreInfo = function (index) {
+  const moreInfoExperiences = function (index) {
     [...experiences][index].zoom = true;
     setExperiences([...experiences]);
   }
 
-  const zoomExit = function (index) {
+  const zoomExitExperiences = function (index) {
     [...experiences][index].zoom = false;
     setExperiences([...experiences]);
   }
 
-  const moreInfo1 = function (index) {
+  const moreInfoCompetences = function (index) {
     [...competences][index].zoom = true;
     setCompetences([...competences]);
   }
 
-  const zoomExit1 = function (index) {
+  const zoomExitCompetences = function (index) {
     [...competences][index].zoom = false;
     setCompetences([...competences]);
+  }
+
+  const moreInfoProjet = function (index) {
+    window.open(projet[index].lienProjet);
+  }
+
+  const zoomExitProjet = function (index) {
+    [...projet][index].zoom = false;
+    setProjet([...projet]);
   }
 
   return (
@@ -222,9 +267,9 @@ export default function App() {
           </div>
           <div className="portfolio">
             <Acceuil/>
-            <Experiences info={experiences} moreInfo={(e) => moreInfo(e)} zoom = {(e) => Zomm(e)} zoomExit={(e) => zoomExit(e)}/>
-            <Competences  info={competences} moreInfo={(e) => moreInfo1(e)} zoom = {(e) => Zomm(e)} zoomExit={(e) => zoomExit1(e)}/>
-            <MesProjets />
+            <Experiences info={experiences} moreInfo={(e) => moreInfoExperiences(e)} zoom = {(e) => Zomm(e)} zoomExit={(e) => zoomExitExperiences(e)}/>
+            <Competences  info={competences} moreInfo={(e) => moreInfoCompetences(e)} zoom = {(e) => Zomm(e)} zoomExit={(e) => zoomExitCompetences(e)}/>
+            <MesProjets   info={projet} moreInfo={(e) => moreInfoProjet(e)} zoom = {(e) => Zomm(e)} zoomExit={(e) => zoomExitProjet(e)}/>
             <VeilleTechnologique />
           </div>
         </div>

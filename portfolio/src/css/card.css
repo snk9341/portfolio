@@ -47,6 +47,32 @@
     cursor: pointer;
   }
 
+  .cardComp:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+  }
+
+  .cardProjet {
+    transform: skewY(-7deg);
+    box-shadow: -4px 4px rgb(35, 145, 107);
+    background-color: rgb(40, 218, 158);
+    border-radius: 2vw;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    width: 16.14vw;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+  }
+
+
+  .cardProjet:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+  }
+
   .imageCard {
     width: 100%;
     height: 60%;
@@ -72,9 +98,18 @@
     height: 30%;
   }
 
+  .titleExperience b {
+    color: black;
+  }
+
+  .titleExperience u {
+    color: white;
+  }
+
   .sumaryExperience {
-    height: 50%;
-    font-size: 50%;
+    height: 45%;
+    font-size: 45%;
+    margin-top: 5%;
   }
 
   .dateExperience {

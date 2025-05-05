@@ -26,9 +26,9 @@
     {
         "titre": "javascript",
         "image": "https://wallpapercave.com/wp/wp12454874.jpg",
-        "resume": "cliquez pour en apprendre plus sur javascript et les frameworks react et svelte",
+        "resume": "cliquez pour en apprendre plus sur javascript",
         "date": "octobre 2023",
-        "descriptif": "J’ai découvert JavaScript, un langage de programmation incontournable pour le web, lors de ma formation en BTS SIO SLAM. Il permet de rendre les pages interactives en manipulant dynamiquement le contenu et les comportements d’une interface. J’ai ensuite approfondi son usage en alternance, en travaillant sur des projets concrets avec les frameworks React et Svelte. Cette expérience m’a permis de maîtriser des concepts clés comme le rendu réactif, la gestion d’état et la structuration d’interfaces modernes et performantes.",
+        "descriptif": "J’ai découvert JavaScript, un langage de programmation incontournable pour le développement web, lors de ma formation en BTS SIO SLAM. Il permet d’ajouter de l’interactivité aux pages web, comme des animations, des réactions aux actions de l’utilisateur ou la mise à jour dynamique du contenu. Cette base m’a ensuite permis d’approfondir mon apprentissage en alternance, en travaillant sur des projets concrets nécessitant la manipulation du DOM, la gestion des événements et la création de composants interactifs.",
         "zoom": false
     },
     {
@@ -36,7 +36,31 @@
         "image": "https://arootroatch-blog.vercel.app/_next/image?url=%2Fimg%2Fclojure-banner.png&w=3840&q=5",
         "resume": "cliquez pour en apprendre plus sur clojure",
         "date": "mai 2024",
-        "descriptif": "Dans le cadre de mon alternance, j’ai appris à développer en Clojure et ClojureScript, des langages fonctionnels dérivés de Lisp. J’ai notamment utilisé Reagent (une interface entre ClojureScript et React) ainsi que re-frame, un framework basé sur un modèle d’architecture unidirectionnelle. Cette expérience m’a permis de découvrir une nouvelle façon de programmer, centrée sur les fonctions pures, l’état immuable et la gestion claire des événements. Travailler avec cet écosystème m’a appris à structurer des applications complexes de manière élégante et performante.",
+        "descriptif": "Durant mon alternance, j’ai été amené à utiliser Clojure et ClojureScript, deux langages fonctionnels basés sur Lisp. Clojure s’exécute sur la JVM, tandis que ClojureScript est destiné au développement front-end via JavaScript. Leur approche immuable et fonctionnelle m’a appris à penser autrement la conception d’applications, en privilégiant les fonctions pures, la clarté du code et la séparation des responsabilités. Ces langages m’ont permis de mieux structurer mes applications tout en découvrant un écosystème très différent des langages impératifs.",
         "zoom": false
-    }
+    },
+    {
+        "titre": "react",
+        "image": "https://hello-pomelo.com/wp-content/uploads/2024/01/react.png",
+        "resume": "cliquez pour en apprendre plus sur react",
+        "date": "décembre 2024",
+        "descriptif": "J’ai découvert React en alternance, dans le cadre de projets web nécessitant des interfaces dynamiques et modulaires. Ce framework JavaScript, développé par Meta, permet de construire des applications en composants réutilisables, facilitant la gestion de l’interface et des données. Grâce à React, j’ai appris à structurer des interfaces complexes, à utiliser le Virtual DOM pour optimiser les performances, et à gérer efficacement l’état des applications avec des hooks comme useState et useEffect.",
+        "zoom": false
+    },
+    {
+        "titre": "svelte",
+        "image": "https://miro.medium.com/v2/resize:fit:676/1*RITt6fMV2WpksJ8f1C2gVw.png",
+        "resume": "cliquez pour en apprendre plus sur svelte",
+        "date": "février 2025",
+        "descriptif": "J’ai également eu l’occasion de travailler avec Svelte, un framework JavaScript moderne orienté performance et simplicité. Contrairement à React, Svelte compile les composants en JavaScript natif à la compilation, ce qui améliore la rapidité d’exécution. Son approche intuitive m’a permis de développer rapidement des interfaces fluides et légères, tout en gardant un code clair et concis. Svelte m’a apporté une nouvelle vision du développement front-end, axée sur l'efficacité et la facilité de maintenance.",
+        "zoom": false
+    },
+    {
+        "titre": "reframe/re-agent",
+        "image": "https://i.vimeocdn.com/video/603160108-0b12a06a7ecbcf9b6b104a05df1f99cb909c0714fcb60af5bcac1a3349093354-d_640x360?r=pad",
+        "resume": "cliquez pour en apprendre plus sur reframe et re-agent",
+        "date": "mars2025",
+        "descriptif": "Dans le cadre de projets front-end en ClojureScript, j’ai travaillé avec Reagent et re-frame, deux bibliothèques complémentaires. Reagent est une interface entre ClojureScript et React, qui permet de créer des composants réactifs avec une syntaxe simple et expressive. Re-frame, quant à lui, propose une architecture unidirectionnelle basée sur des événements, facilitant la gestion de l’état global de l’application. L’utilisation conjointe de ces outils m’a permis de construire des interfaces complexes de manière claire, modulaire et maintenable, en tirant parti des avantages de la programmation fonctionnelle.",
+        "zoom": false
+    }    
 ]

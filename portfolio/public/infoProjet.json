@@ -2,22 +2,50 @@
 {
     "titre": "bibliothèque voiture react",
     "image": "/src/assets/img-react.png",
-    "resume": "cliquez pour accéder au dépo github du projet",
+    "resume": "cliquez pour accéder au dépôt github du projet",
     "date": "février 2025",
     "lienProjet": "https://github.com/snk9341/exercice-react"
 },
 {
     "titre": "BballShop",
     "image": "/src/assets/imgBballShop.png",
-    "resume": "cliquez pour accéder au dépo github du projet",
+    "resume": "cliquez pour accéder au dépôt github du projet",
     "date": "mars 2024",
     "lienProjet": "https://github.com/snk9341/e6-basket"
 },
 {
     "titre": "to do list",
-    "image": "https://arootroatch-blog.vercel.app/_next/image?url=%2Fimg%2Fclojure-banner.png&w=3840&q=5",
-    "resume": "cliquez pour accéder au dépo github du projet",
+    "image": "/src/assets/imgToDoList.png",
+    "resume": "cliquez pour accéder au dépôt github du projet",
     "date": "décembre 2024",
     "lienProjet": "https://github.com/snk9341/to-do-list"
+},
+{
+    "titre": "quizz",
+    "image": "/src/assets/imgQuizz.png",
+    "resume": "cliquez pour accéder au dépôt github du projet",
+    "date": "février 2024",
+    "lienProjet": "https://github.com/snk9341/quizz"
+},
+{
+    "titre": "Rubik's Cube",
+    "image": "/src/assets/imgRubiksCube.png",
+    "resume": "cliquez pour accéder au dépôt github du projet",
+    "date": "juin 2024",
+    "lienProjet": "https://github.com/snk9341/rubik-s-cube"
+},
+{
+    "titre": "bibliothèque voiture svelte",
+    "image": "/src/assets/img-react.png",
+    "resume": "cliquez pour accéder au dépôt github du projet",
+    "date": "mars 2025",
+    "lienProjet": "https://github.com/snk9341/exercice-svelte"
+},
+{
+    "titre": "bibliothèque voiture clojure",
+    "image": "/src/assets/img-react.png",
+    "resume": "cliquez pour accéder au dépôt github du projet",
+    "date": "avril 2025",
+    "lienProjet": "https://github.com/snk9341/car-clojure"
 }
 ]

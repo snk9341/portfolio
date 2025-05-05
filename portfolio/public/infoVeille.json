@@ -1,0 +1,51 @@
+[
+    {
+        "titre": "google alert",
+        "image": "https://www.actulligence.com/wp-content/uploads/2023/10/img_article_google.jpg",
+        "resume": "",
+        "date": "mars 2024",
+        "lienProjet": "https://github.com/snk9341/exercice-react"
+    },
+    {
+        "titre": "compte twitter",
+        "image": "https://www.bew-web-agency.fr/wp-content/uploads/2023/07/x-logo-twitter-elon-musk.webp",
+        "resume": "cliquez pour en découvir un",
+        "date": "janvier 2025",
+        "lienProjet": "https://x.com/ChallengesCss"
+    },
+    {
+        "titre": "smashing magazine",
+        "image": "/src/assets/smashingmagazine.png",
+        "resume": "cliquez pour découvrir ce site",
+        "date": "mai 2024",
+        "lienProjet": "https://www.smashingmagazine.com/"
+    },
+    {
+        "titre": "css shape",
+        "image": "/src/assets/css-shape.png",
+        "resume": "cliquez pour découvrir ce site",
+        "date": "janvier 2025",
+        "lienProjet": "https://css-shape.com/"
+    },
+    {
+        "titre": "css article",
+        "image": "/src/assets/css-article.png",
+        "resume": "cliquez pour découvrir ce site",
+        "date": "janvier 2025",
+        "lienProjet": "https://css-articles.com/"
+    },
+    {
+        "titre": "css tip",
+        "image": "/src/assets/css-tip.png",
+        "resume": "cliquez pour découvrir ce site",
+        "date": "janvier 2025",
+        "lienProjet": "https://css-tip.com/"
+    },
+    {
+        "titre": "css tip",
+        "image": "/src/assets/css-tip.png",
+        "resume": "cliquez pour découvrir ce site",
+        "date": "janvier 2025",
+        "lienProjet": "https://css-tip.com/"
+    }
+]

@@ -181,11 +181,38 @@ function MesProjets ({info, moreInfo,zoomExit}) {
   )
 }
 
-function VeilleTechnologique ({}) {
+function VeilleTechnologique ({info, moreInfo,zoomExit}) {
   return (
     <>
       <section id="veille-technologique" className="presClass">
         <a href="#veille-technologique"><u><h2>#Veille technologique</h2></u></a>
+        <div className="cardContainer">
+        {info.map((info, index) => {
+          return (
+            <>
+              <div className="cardProjet" id={"Card" + index} onClick={() => moreInfo(index)}>
+                <div className="imageCard">
+                  <img className="imgimg" src={info.image} alt="" />
+                </div>
+                <div className="descExperience">
+                  <div className="titleExperience">
+                    <h3><u><b>{info.titre}</b></u></h3>
+                  </div>
+                  <div className="sumaryExperience">
+                    <h4>{info.resume}</h4>
+                  </div>
+                  <div className="dateExperience">
+                    <h5>{info.date}</h5>
+                  </div>
+                </div>
+              </div>
+              {info.zoom && (
+                <Zomm info={info} index={index} zoomExit={(e) => zoomExit(e)}/>
+              )}
+            </>
+          )
+        })}
+      </div>
       </section>
     </>
   )
@@ -195,6 +222,7 @@ export default function App() {
   const [experiences, setExperiences] = useState([]);
   const [competences, setCompetences] = useState([]);
   const [projet, setProjet] = useState([]);
+  const [veille, setVeille] = useState([]);
 
   const getExperiencesInfo = function () {
     fetch("/infoExperiences.json")
@@ -212,6 +240,14 @@ export default function App() {
       });
   };
 
+  const getVeilleInfo = function () {
+    fetch("/infoVeille.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setVeille(data);
+      });
+  };
+
   const getProjetInfo = function () {
     fetch("/infoProjet.json")
       .then((res) => res.json())
@@ -224,6 +260,7 @@ export default function App() {
     getExperiencesInfo();
     getCompetencesInfo();
     getProjetInfo();
+    getVeilleInfo();
   }, []);
 
   const moreInfoExperiences = function (index) {
@@ -250,9 +287,8 @@ export default function App() {
     window.open(projet[index].lienProjet);
   }
 
-  const zoomExitProjet = function (index) {
-    [...projet][index].zoom = false;
-    setProjet([...projet]);
+  const moreInfoVeille = function (index) {
+    window.open(veille[index].lienProjet);
   }
 
   return (
@@ -269,8 +305,8 @@ export default function App() {
             <Acceuil/>
             <Experiences info={experiences} moreInfo={(e) => moreInfoExperiences(e)} zoom = {(e) => Zomm(e)} zoomExit={(e) => zoomExitExperiences(e)}/>
             <Competences  info={competences} moreInfo={(e) => moreInfoCompetences(e)} zoom = {(e) => Zomm(e)} zoomExit={(e) => zoomExitCompetences(e)}/>
-            <MesProjets   info={projet} moreInfo={(e) => moreInfoProjet(e)} zoom = {(e) => Zomm(e)} zoomExit={(e) => zoomExitProjet(e)}/>
-            <VeilleTechnologique />
+            <MesProjets   info={projet} moreInfo={(e) => moreInfoProjet(e)} zoom = {(e) => Zomm(e)}/>
+            <VeilleTechnologique info={veille} moreInfo={(e) => moreInfoVeille(e)} zoom = {(e) => Zomm(e)}/>
           </div>
         </div>
       </div>

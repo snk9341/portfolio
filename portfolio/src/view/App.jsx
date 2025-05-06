@@ -27,7 +27,7 @@ function Acceuil({ }) {
         <a href="#mon-profil"><u><h2>#Mon profil</h2></u></a>
         <br />
         <p className="pAcceuil">
-          Je m'appelle John et je suis actuellement étudiant en BTS Services Informatiques aux Organisations (SIO), spécialité Solutions Logicielles et Applications Métiers (SLAM), à l’institut F2i de Vincennes. Dans le cadre de ma formation, j’effectue mon alternance au sein d’une startup innovante située à Station F, à Paris.
+          Bonjour, je m'appelle Ilann et je suis actuellement étudiant en BTS Services Informatiques aux Organisations (SIO), spécialité Solutions Logicielles et Applications Métiers (SLAM), à l’institut F2i de Vincennes. Dans le cadre de ma formation, j’effectue mon alternance au sein d’une startup innovante située à Station F, à Paris.
           <br /><br />
           Passionné par le développement informatique, je m’intéresse particulièrement à la création d’applications web et logicielles. Mon parcours me permet d’allier théorie et pratique, tout en développant mes compétences techniques et mon sens de l’adaptation en environnement professionnel.
 <br /><br />

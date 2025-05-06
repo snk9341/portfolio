@@ -67,6 +67,21 @@
     flex: 0 0 auto;
   }
 
+  .cardVeille {
+    transform: skewY(-7deg);
+    box-shadow: -4px 4px rgb(141, 189, 30);;
+    background-color: rgb(178, 238, 38);
+    border-radius: 2vw;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    width: 16.14vw;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+  }
+
 
   .cardProjet:hover {
     transform: scale(1.15);
@@ -118,4 +133,17 @@
     font-size: 30%;
     display: flex;
     flex-direction: column;
+  }
+
+  .buttonTab {
+    width: 25vw;
+    height: 6vh;
+    border-radius: 5vw;
+    border: solid 0.1em grey;
+    background-color: transparent;
+  }
+
+  .buttonTab:hover {
+    cursor: pointer;
+    background-color: rgb(230, 229, 229);
   }

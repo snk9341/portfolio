@@ -176,6 +176,9 @@ function MesProjets ({info, moreInfo,zoomExit}) {
           )
         })}
       </div>
+      <div className="tableau">
+        <a href="/src/assets/6- Annexe 6-1 - Tableau de synthèse - Epreuve E4 - BTS SIO 2024.pdf" target="_blank"><button className="buttonTab">cliquez sur ce bouton pour accéder au tableau de synthèse</button></a>
+      </div>
       </section>
     </>
   )
@@ -190,7 +193,7 @@ function VeilleTechnologique ({info, moreInfo,zoomExit}) {
         {info.map((info, index) => {
           return (
             <>
-              <div className="cardProjet" id={"Card" + index} onClick={() => moreInfo(index)}>
+              <div className="cardVeille" id={"Card" + index} onClick={() => moreInfo(index)}>
                 <div className="imageCard">
                   <img className="imgimg" src={info.image} alt="" />
                 </div>

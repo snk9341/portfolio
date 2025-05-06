@@ -13,7 +13,7 @@ function Header({ }) {
     <>
       <div className="myProfil">
         <img className="imgLogoSite" src="/src/assets/logo-portfolio.png" alt="logo application" />
-        <h1 className="nameAppli">mon portefolio</h1>
+        <h1 className="nameAppli">mon portfolio</h1>
       </div>
       <hr className="hrHeader" />
     </>

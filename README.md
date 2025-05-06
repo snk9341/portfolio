@@ -24,7 +24,7 @@ Le site est responsive, moderne, et pensé pour offrir une navigation fluide à 
 
 ```bash
 git clone https://github.com/ton-utilisateur/mon-portfolio.git
-cd mon-portfolio
+cd portfolio
 ```
 
 ### 2. Installer les dépendances
@@ -76,7 +76,7 @@ The site is fully responsive and designed to provide a smooth user experience.
 
 ```bash
 git clone https://github.com/your-username/my-portfolio.git
-cd my-portfolio
+cd portfolio
 ```
 
 ### 2. Install dependencies

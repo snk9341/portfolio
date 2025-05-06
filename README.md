@@ -23,7 +23,7 @@ Le site est responsive, moderne, et pensé pour offrir une navigation fluide à 
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/ton-utilisateur/mon-portfolio.git
+git clone https://github.com/snk9341/portfolio.git
 cd portfolio
 ```
 
@@ -75,7 +75,7 @@ The site is fully responsive and designed to provide a smooth user experience.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/my-portfolio.git
+git clone https://github.com/snk9341/portfolio.git
 cd portfolio
 ```
 
